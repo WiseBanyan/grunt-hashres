@@ -1,3 +1,4 @@
+# WiseBanyan fork of [grunt-hashres](https://github.com/Luismahou/grunt-hashres)
 #### grunt-hashres has been updated to Grunt 0.4. if you're still using Grunt 0.3.x go to [old version documentation](https://github.com/Luismahou/grunt-hashres/blob/master/grunt-0.3-README.md)
 
 # grunt-hashres
