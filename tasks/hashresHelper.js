@@ -47,11 +47,12 @@ exports.hashAndSub = function(grunt, options) {
               hash: /[0-9a-f]{8}/,
               name: fileName.slice(0, lastIndex),
               ext: fileName.slice(lastIndex + 1, fileName.length)
-            });
+            }),
+            originalDirectory = path.dirname(src)+'/';
 
         // Mapping the original name with hashed one for later use.
-        nameToHashedName[fileName] = renamed;
-        nameToNameSearch[fileName] = nameSearch;
+        nameToHashedName[originalDirectory+fileName] = originalDirectory+renamed;
+        nameToNameSearch[originalDirectory+fileName] = originalDirectory+nameSearch;
 
         // Renaming the file
         if (renameFiles) {
